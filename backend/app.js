@@ -1,6 +1,7 @@
 var express = require('express');  
 var app = express();
 const bodyParser = require("body-parser");
+const chatbotRoutes = require('./routes/chatbot');
 
 app.get('/', function (req, res) {  
    res.send('starting up the server');  
@@ -13,3 +14,5 @@ var host = server.address().address
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use('/admin', chatbotRoutes);
