@@ -1,0 +1,31 @@
+.bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .react-chatbot-kit-chat-inner-container {
+} */
+
+.react-chatbot-kit-chat-container {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.react-chatbot-kit-user-chat-message {
+  display: flex;
+  word-break: break-all;
+}
+
+.react-chatbot-kit-chat-message-container {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+.react-chatbot-kit-chat-message-container::-webkit-scrollbar {
+  display: none;
+}
+
+.react-chatbot-kit-chat-bot-avatar-letter {
+  margin-top: auto;
+}

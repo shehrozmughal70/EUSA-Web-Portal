@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // reactstrap components
 // import {
@@ -12,7 +12,8 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 // sections for this page
 import Images from "./index-sections/Images.js";
 import LandingPage from './examples/LandingPage';
-import Chatbot from '../components/Chatbot/Bot';
+// import Chatbot from '../components/Chatbot/Bot';
+import Modal from './Modal';
 import {
   Button,
   Label,
@@ -38,6 +39,9 @@ function Index() {
       document.body.classList.remove("sidebar-collapse");
     };
   });
+
+  const [showBot, setShowBot] = useState(false);
+
   return (
     <>
       <IndexNavbar />
@@ -45,7 +49,7 @@ function Index() {
         <IndexHeader />
         <div className="main">
           <Images />
-          <Chatbot />
+          <Modal />
           <LandingPage />
           {/* <Notifications /> */}
           {/* <Javascript /> */}
