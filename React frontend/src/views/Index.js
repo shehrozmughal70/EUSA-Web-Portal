@@ -12,6 +12,10 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 // sections for this page
 import Images from "./index-sections/Images.js";
 import LandingPage from './examples/LandingPage';
+import Chatbot from 'react-chatbot-kit';
+import ActionProvider from '../components/Chatbot/ActionProvider';
+import MessageParser from '../components/Chatbot/MessageParser';
+import config from '../components/Chatbot/config';
 
 import {
   Button,
@@ -45,6 +49,7 @@ function Index() {
         <IndexHeader />
         <div className="main">
           <Images />
+          <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
           <LandingPage />
           {/* <Notifications /> */}
           {/* <Javascript /> */}
