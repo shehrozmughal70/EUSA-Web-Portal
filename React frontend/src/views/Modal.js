@@ -4,16 +4,11 @@ import Chatbot from '../components/Chatbot/Bot';
 // reactstrap components
 import {
     Button,
-    FormGroup,
     Container,
     Modal,
     ModalBody,
     Row,
     Col,
-    UncontrolledTooltip,
-    PopoverBody,
-    PopoverHeader,
-    UncontrolledPopover,
 } from "reactstrap";
 
 // core components
@@ -28,7 +23,7 @@ function Javascript() {
                     <Row id="modals">
                         <Col md="6">
                             <Button
-                                color="primary"
+                                color="info"
                                 className="mr-1"
                                 onClick={() => setModal1(true)}
                             >
