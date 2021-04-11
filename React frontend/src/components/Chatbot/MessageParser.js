@@ -1,3 +1,5 @@
+import axios from "axios";
+
 let queries = {}
 class MessageParser {
     constructor(actionProvider) {
@@ -18,6 +20,15 @@ class MessageParser {
         else if (lowerCaseMessage.includes("@")) {
             queries.email = lowerCaseMessage;
             this.actionProvider.response()
+            axios.post('http://localhost:8080/admin/sendQuery', {
+                issue: queries,
+            })
+                .then(function (response) {
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
         }
     }
 }
