@@ -27,18 +27,18 @@ function IndexHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/back1.png") + ")",
+            backgroundImage: "url(" + require("assets/img/back6.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
         <Container>
           <div className="content-center brand">
-            <img
+            {/* <img
               alt="..."
               style={{ objectFit: 'contain' }}
               className="n-logo"
               src={require("assets/img/logo3.png")}
-            ></img>
+            ></img> */}
             <h1 className="h1-seo">EUSA WEB</h1>
             <h3>THE SERVE BUILT FOR YOU.</h3>
           </div>

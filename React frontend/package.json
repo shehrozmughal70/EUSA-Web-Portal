@@ -3,6 +3,8 @@
   "version": "1.4.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/styles": "^4.11.3",
     "axios": "^0.21.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
