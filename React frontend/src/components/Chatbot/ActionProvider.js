@@ -35,8 +35,18 @@ class ActionProvider {
     }
 
     name() {
-        const name = this.createChatBotMessage("My name is Service Bot 🤖")
+        const name = this.createChatBotMessage("I m Service Bot 🤖")
         this.updateChatbotState(name)
+    }
+
+    live() {
+        const live = this.createChatBotMessage("In the cloud. Whatever that means.")
+        this.updateChatbotState(live)
+    }
+
+    dontKnow() {
+        const dont = this.createChatBotMessage("Sorry I don't know the answer to this one.")
+        this.updateChatbotState(dont)
     }
     enterEmail() {
         const emails = this.createChatBotMessage("Please provide your email")

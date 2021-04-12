@@ -25,8 +25,11 @@ class MessageParser {
         else if (lowerCaseMessage.includes("morning")) {
             this.actionProvider.morning()
         }
-        else if (lowerCaseMessage.includes("your name")) {
+        else if (lowerCaseMessage.includes("name")) {
             this.actionProvider.name()
+        }
+        else if (lowerCaseMessage.includes("live")) {
+            this.actionProvider.live()
         }
         else if (!(lowerCaseMessage.includes("@"))) {
             queries.query = lowerCaseMessage;
