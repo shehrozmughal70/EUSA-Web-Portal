@@ -14,6 +14,30 @@ class ActionProvider {
         this.updateChatbotState(responses)
     }
 
+    fine() {
+        const fine = this.createChatBotMessage("Fine what about you?")
+        this.updateChatbotState(fine)
+    }
+
+    help() {
+        const help = this.createChatBotMessage("How may I assist you?")
+        this.updateChatbotState(help)
+    }
+
+    welcome() {
+        const welcome = this.createChatBotMessage("You're welcome 😊")
+        this.updateChatbotState(welcome)
+    }
+
+    morning() {
+        const morning = this.createChatBotMessage("Good Morning 🌅")
+        this.updateChatbotState(morning)
+    }
+
+    name() {
+        const name = this.createChatBotMessage("My name is Service Bot 🤖")
+        this.updateChatbotState(name)
+    }
     enterEmail() {
         const emails = this.createChatBotMessage("Please provide your email")
         this.updateChatbotState(emails)

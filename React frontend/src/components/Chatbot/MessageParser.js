@@ -13,6 +13,21 @@ class MessageParser {
         if (lowerCaseMessage.includes("hello") || lowerCaseMessage.includes("hi")) {
             this.actionProvider.greet()
         }
+        else if (lowerCaseMessage.includes("how are")) {
+            this.actionProvider.fine()
+        }
+        else if (lowerCaseMessage.includes("help")) {
+            this.actionProvider.help()
+        }
+        else if (lowerCaseMessage.includes("thank")) {
+            this.actionProvider.welcome()
+        }
+        else if (lowerCaseMessage.includes("morning")) {
+            this.actionProvider.morning()
+        }
+        else if (lowerCaseMessage.includes("your name")) {
+            this.actionProvider.name()
+        }
         else if (!(lowerCaseMessage.includes("@"))) {
             queries.query = lowerCaseMessage;
             this.actionProvider.enterEmail()

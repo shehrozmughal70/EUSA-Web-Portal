@@ -1,7 +1,13 @@
 .bot {
+  margin: 40px 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 9999;
+  box-shadow: 5px 5px 13px rgb(91 81 81 / 40%);
+  border-radius: 5px;
 }
 
 /* .react-chatbot-kit-chat-inner-container {
@@ -28,4 +34,17 @@
 
 .react-chatbot-kit-chat-bot-avatar-letter {
   margin-top: auto;
+}
+
+.bot__button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #1f3646;
+  border: none;
+  position: fixed;
+  bottom: 15px;
+  z-index: 9999;
+  right: 40px;
+  outline: none;
 }

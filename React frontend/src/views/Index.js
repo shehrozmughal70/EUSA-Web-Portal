@@ -12,8 +12,8 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 // sections for this page
 import Images from "./index-sections/Images.js";
 import LandingPage from './examples/LandingPage';
-// import Chatbot from '../components/Chatbot/Bot';
-import Modal from './Modal';
+import Chatbot from '../components/Chatbot/Bot';
+// import Modal from './Modal';
 import {
   Button,
   Label,
@@ -49,7 +49,7 @@ function Index() {
         <IndexHeader />
         <div className="main">
           <Images />
-          <Modal />
+          <Chatbot />
           <LandingPage />
           {/* <Notifications /> */}
           {/* <Javascript /> */}

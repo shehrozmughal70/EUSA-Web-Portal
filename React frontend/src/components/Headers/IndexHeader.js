@@ -23,11 +23,11 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header " filter-color="blue">
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/car.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/background2.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
@@ -35,10 +35,11 @@ function IndexHeader() {
           <div className="content-center brand">
             <img
               alt="..."
+              style={{ objectFit: 'contain' }}
               className="n-logo"
-              src={require("assets/img/now-logo.png")}
+              src={require("assets/img/logo3.png")}
             ></img>
-            <h1 className="h1-seo">CAB CORNER.</h1>
+            <h1 className="h1-seo">EUSA WEB</h1>
             <h3>THE SERVE BUILT FOR YOU.</h3>
           </div>
 

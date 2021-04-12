@@ -118,6 +118,14 @@ function LandingPage() {
                 </Col>
               </Row>
             </div>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="8">
+                <h2 className="title">What does EUSA actually provide?</h2>
+                <h5 className="description">
+                  E-utility service is an android application in which we aim to provide fast and responsive solutions for customers where they can search for a number of services; Electrician, Plumber, AC Repair, Mechanics, Carpenters. Location of these service providers will be available through map, customers will be able to contact, book and visit (location) the service providers at the tap of a button.
+                </h5>
+              </Col>
+            </Row>
           </Container>
         </div>
         <div className="section section-team text-center">
@@ -132,7 +140,7 @@ function LandingPage() {
                       className="rounded-circle img-fluid img-raised"
                       src={require("assets/img/avatar.jpg")}
                     ></img>
-                    <h4 className="title">Romina Hadid</h4>
+                    <h4 className="title">Shehroz Mughal</h4>
                     <p className="category text-info">Model</p>
                     <p className="description">
                       You can write here details about one of your team members.
@@ -176,7 +184,7 @@ function LandingPage() {
                       className="rounded-circle img-fluid img-raised"
                       src={require("assets/img/ryan.jpg")}
                     ></img>
-                    <h4 className="title">Ryan Tompson</h4>
+                    <h4 className="title">Salman Qureshi</h4>
                     <p className="category text-info">Designer</p>
                     <p className="description">
                       You can write here details about one of your team members.
@@ -212,7 +220,7 @@ function LandingPage() {
                       className="rounded-circle img-fluid img-raised"
                       src={require("assets/img/eva.jpg")}
                     ></img>
-                    <h4 className="title">Eva Jenner</h4>
+                    <h4 className="title">Akash Ali</h4>
                     <p className="category text-info">Fashion</p>
                     <p className="description">
                       You can write here details about one of your team members.
