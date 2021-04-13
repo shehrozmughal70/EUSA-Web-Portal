@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 20px;
+  margin: 40px 30px;
+  height: 400px;
+}
+
+.card > h3 {
+  margin-top: 20px;
+}
+
+.card > p {
+  line-height: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  word-wrap: break-word;
+}
+
+.card > img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}

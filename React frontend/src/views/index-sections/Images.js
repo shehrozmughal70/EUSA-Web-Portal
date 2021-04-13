@@ -1,14 +1,62 @@
 import React from "react";
-
 // reactstrap components
+import { makeStyles } from '@material-ui/core/styles';
 import { Container, Row, Col } from "reactstrap";
-
+import Card from '../../components/Card/Card';
 // core components
 
+const useStyles = makeStyles({
+  cards: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  heading: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: '50px',
+    borderBottom: '5px solid #2ca8ff',
+
+  }
+  , h: {
+    fontWeight: 'bold'
+  },
+  banner: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  paragraph: {
+    padding: '20px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '20px',
+    fontSize: '14px',
+    fontWeight: 'bold'
+  }
+});
+
 function Images() {
+
+  const classes = useStyles();
   return (
     <>
-      <div className="section section-images">
+      <div className={classes.banner}>
+        <div className={classes.heading}>
+          <h1 className={classes.h}>Our Services</h1>
+        </div>
+        <div className={classes.paragraph}>
+          <h4>Looking for reliable Construction, Renovation, and Maintenance & Repair Services? Our prices start as low as Rs. 1000* only!</h4>
+        </div>
+
+        <div className={classes.cards}>
+          <Card image="https://www.thehandyman.com.pk/images/zabbym__Electrician_3_blk.png" heading="ELECTRICAL SERVICES" para="Electrical Faults, UPS Installation, TV Installation, Breaker Replacement, Plug Repair, Wiring etc. Starting as low as Rs. 1000 only." />
+          <Card image="https://www.thehandyman.com.pk/images/zabbym__Plumber_blue.png" heading="PLUMBING SERVICES" para="Pipe Leaks, Muslim Shower &amp; Tap Replacement, Geyser Installation, Opening Blocked Drains etc. Starting as low as Rs. 1000 only." />
+          <Card image="https://www.thehandyman.com.pk/images/zabbym__Painter_2.png" heading="PAINTING SERVICES" para="Painting walls,ceilings and furniture. Only the most skilled professionals for commercial office paint." />
+        </div>
+      </div>
+
+      {/* <div className="section section-images">
         <Container>
           <Row>
             <Col md="12">
@@ -33,7 +81,7 @@ function Images() {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
     </>
   );
 }

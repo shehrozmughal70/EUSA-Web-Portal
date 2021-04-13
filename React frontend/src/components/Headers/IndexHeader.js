@@ -1,10 +1,25 @@
 /*eslint-disable*/
 import React from "react";
 // reactstrap components
+import { makeStyles } from '@material-ui/core/styles';
 import { Container } from "reactstrap";
 // core components
 
+const useStyles = makeStyles({
+  content: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    marginTop: '220px',
+    marginLeft: '-100px',
+    width: '70%',
+  }
+});
+
+
 function IndexHeader() {
+  const classes = useStyles();
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -23,7 +38,7 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header " filter-color="blue">
+      <div className="page-header" filter-color="blue">
         <div
           className="page-header-image"
           style={{
@@ -32,15 +47,9 @@ function IndexHeader() {
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="content-center brand">
-            {/* <img
-              alt="..."
-              style={{ objectFit: 'contain' }}
-              className="n-logo"
-              src={require("assets/img/logo3.png")}
-            ></img> */}
-            <h1 className="h1-seo">EUSA WEB</h1>
-            <h3>THE SERVE BUILT FOR YOU.</h3>
+          <div className={classes.content}>
+            <h1>Quick. Reliable. Affordable.</h1>
+            <h3>EUSA aims to add value to customers' lives by providing a smart solution to all their problems. We are providing the largest range of home maintenance services all over Karachi and Lahore.</h3>
           </div>
 
         </Container>

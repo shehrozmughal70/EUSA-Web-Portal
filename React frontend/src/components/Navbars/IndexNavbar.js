@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { makeStyles } from '@material-ui/styles';
 import Link from '@material-ui/core/Link';
 import { UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
+import Chatbot from '../Chatbot/Bot'
 // reactstrap components
 import {
   Button,
@@ -31,6 +32,7 @@ const useStyles = makeStyles({
   nav__center: {
     display: 'flex',
     justifyContent: 'space-between',
+    alignItems: 'center',
     flex: 1,
     marginLeft: '100px'
   },
