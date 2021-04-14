@@ -14,9 +14,29 @@ const useStyles = makeStyles({
     marginTop: '220px',
     marginLeft: '-100px',
     width: '70%',
+    '@media (max-width: 600px)': {
+      display: 'none'
+    },
+    '@media (max-width: 900px)': {
+      marginLeft: '20px'
+    },
+    '@media (max-width: 1100px)': {
+      marginLeft: '10px'
+    },
+    '@media (max-width: 1300px)': {
+      marginLeft: '10px'
+    }
   },
   heading: {
     marginLeft: '50px',
+    '@media (max-width: 800px)': {
+      fontSize: '24px'
+    }
+  },
+  headingthree: {
+    '@media (max-width: 800px)': {
+      fontSize: '18px'
+    }
   }
 });
 
@@ -52,7 +72,7 @@ function IndexHeader() {
         <Container>
           <div className={classes.content}>
             <h1 className={classes.heading}>Quick. Reliable. Affordable.</h1>
-            <h3>EUSA aims to add value to customers' lives by providing a smart solution to all their problems. We are providing the largest range of home maintenance services all over Karachi and Lahore.</h3>
+            <h3 className={classes.headingthree}>EUSA aims to add value to customers' lives by providing a smart solution to all their problems. We are providing the largest range of home maintenance services all over Karachi and Lahore.</h3>
           </div>
 
         </Container>

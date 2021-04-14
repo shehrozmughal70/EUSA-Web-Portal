@@ -25,11 +25,67 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 600px) {
-  .card > p {
-    line-break: 14px;
-  }
+@media (max-width: 900px) {
   .card {
-    margin: 20px 15px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  h3 {
+    font-size: 23px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  h3 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 12px;
   }
 }

@@ -10,9 +10,10 @@ const useStyles = makeStyles({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    '@media (max-width: 600px)': {
-      flexWrap: 'wrap',
-    },
+    '@media (max-width: 900px)': {
+
+      flexDirection: 'column',
+    }
   },
   heading: {
     display: 'flex',
