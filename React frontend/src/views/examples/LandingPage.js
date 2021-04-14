@@ -37,13 +37,9 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Why Choose EUSA</h2>
+                <h2 className="title">About Our Company</h2>
                 <h5 className="description">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record low maximum sea ice extent tihs year down
-                  to low ice extent in the Pacific and a late drop in ice extent
-                  in the Barents Sea.
+                  This project has great potential in easing the struggle by the many service providers out there looking to work. It will also greatly save time for our customers by reducing the time spent looking for help and increasing the time spent productively. With fast booking and reliable workers, this app can easily find itself among the app giants such as foodpanda, uber etc.
                 </h5>
               </Col>
             </Row>
@@ -55,22 +51,19 @@ function LandingPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")",
+                        "url(" + require("assets/img/about1.jpg") + ")",
                     }}
                   >
                     <p className="blockquote blockquote-info">
-                      "Over the span of the satellite record, Arctic sea ice has
-                      been declining significantly, while sea ice in the
-                      Antarctichas increased very slightly" <br></br>
-                      <br></br>
-                      <small>-NOAA</small>
+                      We are passionate about our goals and are always willing to go to extra mile to give customers the experience they yearn for and deserve! <br></br>
+                      <br />
                     </p>
                   </div>
                   <div
                     className="image-container"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg") + ")",
+                        "url(" + require("assets/img/about3.jpg") + ")",
                     }}
                   ></div>
                 </Col>
@@ -79,42 +72,26 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg1.jpg") + ")",
+                        "url(" + require("assets/img/about4.jpg") + ")",
                     }}
                   ></div>
-                  <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
-                  </h3>
+                  <h2 style={{ fontWeight: 'bold' }}>
+                    Why Choose EUSA
+                  </h2>
+                  <h4>● Trained</h4>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                    Our workers are skilled, trained and professional. Furthermore, they are background-checked.
                   </p>
+                  <h4>● Quick</h4>
                   <p>
-                    For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
+                    Our handymen use motor bikes to minimize delays and reach you on time.
                   </p>
+                  <h4>● AFFORDABLE</h4>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                    We charge sensible prices that are really competitive even when compared to contractors or freelance technicians. The clients are further given invoices professionally and don’t have to go through the worry of over-pricing.
                   </p>
+                  <h4>● CUSTOMER FOCUSED</h4>
+                  <p>We provide after support for our services and make routine feedback calls to our customers. In the unlikely event you are unhappy with the job, we will redo it to your satisfaction*.</p>
                 </Col>
               </Row>
             </div>
