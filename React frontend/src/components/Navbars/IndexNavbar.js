@@ -2,22 +2,17 @@ import React, { useState } from "react";
 import { makeStyles } from '@material-ui/styles';
 import Link from '@material-ui/core/Link';
 import { UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
-import Chatbot from '../Chatbot/Bot'
+
 // reactstrap components
 import {
   Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
-  NavItem,
   NavLink,
+  NavItem,
   Nav,
   Container,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 
@@ -38,6 +33,10 @@ const useStyles = makeStyles({
   },
   blue: {
     color: 'blue'
+  },
+  aboutus: {
+    backgroundColor: '#2ca8ff',
+    marginTop: '10px'
   }
 });
 
@@ -126,13 +125,13 @@ function IndexNavbar() {
             isOpen={collapseOpen}
             navbar
           >
-            <Nav navbar>
+            <Nav nav>
 
               <NavItem>
-                <Button color="info" >About Us</Button>
+                <NavLink style={{ backgroundColor: '#2ca8ff', color: 'white', marginTop: '8px', marginRight: '10px' }} href="#aboutus">About Us</NavLink>
               </NavItem>
               <NavItem>
-                <Button color="info">Ask a query</Button>
+                <NavLink style={{ backgroundColor: '#2ca8ff', color: 'white', marginTop: '8px', padding: '-10px' }} href="#aboutus">Ask a Query</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

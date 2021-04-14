@@ -3,21 +3,16 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 
 function LandingPage() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
+  // const [firstFocus, setFirstFocus] = React.useState(false);
+  // const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -32,7 +27,7 @@ function LandingPage() {
   return (
     <>
 
-      <div className="wrapper">
+      <div id="aboutus" className="wrapper">
         <div className="section section-about-us">
           <Container>
             <Row>
@@ -115,27 +110,17 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/avatar.jpg")}
+                      src={require("assets/img/shehroz.jpeg")}
                     ></img>
                     <h4 className="title">Shehroz Mughal</h4>
-                    <p className="category text-info">Model</p>
+                    <p className="category text-info">AI Enginner</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      Build AI models from scratch and help the different components of the organization (such as product managers and stakeholders) understand what results they gain from the model. Build data ingestion and data transformation.{" "}
+                      {/* <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
                       </a>{" "}
-                      for people to be able to follow them outside the site.
+                      for people to be able to follow them outside the site. */}
                     </p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
@@ -148,7 +133,7 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      onClick={(e) => window.location = "https://www.facebook.com/"}
                     >
                       <i className="fab fa-facebook-square"></i>
                     </Button>
@@ -162,15 +147,13 @@ function LandingPage() {
                       src={require("assets/img/ryan.jpg")}
                     ></img>
                     <h4 className="title">Salman Qureshi</h4>
-                    <p className="category text-info">Designer</p>
+                    <p className="category text-info">Backend Developer</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      Responsible for server-side web application logic and integration of the work front-end developers do. I usually write the web services and APIs used by front-end developers and mobile application developers.{" "}
+                      {/* <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
                       </a>{" "}
-                      for people to be able to follow them outside the site.
+                      for people to be able to follow them outside the site. */}
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -178,15 +161,15 @@ function LandingPage() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <i className="fab fa-twitter"></i>
+                      <i className="fab fa-instagram"></i>
                     </Button>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      onClick={(e) => window.location = "https://www.facebook.com/"}
                     >
-                      <i className="fab fa-linkedin"></i>
+                      <i className="fab fa-facebook-square"></i>
                     </Button>
                   </div>
                 </Col>
@@ -198,15 +181,13 @@ function LandingPage() {
                       src={require("assets/img/eva.jpg")}
                     ></img>
                     <h4 className="title">Akash Ali</h4>
-                    <p className="category text-info">Fashion</p>
+                    <p className="category text-info">Frontend Developer</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      Responsible for implementing visual elements that users see and interact with in a web application.Supported by back-end web developers,I m  responsible for server-side application logic and web integration{" "}
+                      {/* <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
                       </a>{" "}
-                      for people to be able to follow them outside the site.
+                      for people to be able to follow them outside the site. */}
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -214,23 +195,15 @@ function LandingPage() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <i className="fab fa-google-plus"></i>
+                      <i className="fab fa-instagram"></i>
                     </Button>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      onClick={(e) => window.location = "https://www.facebook.com/"}
                     >
-                      <i className="fab fa-youtube"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
+                      <i className="fab fa-facebook-square"></i>
                     </Button>
                   </div>
                 </Col>

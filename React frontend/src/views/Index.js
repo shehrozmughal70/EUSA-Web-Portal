@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // reactstrap components
 // import {
@@ -14,18 +14,18 @@ import Images from "./index-sections/Images.js";
 import LandingPage from './examples/LandingPage';
 import Chatbot from '../components/Chatbot/Bot';
 // import Modal from './Modal';
-import {
-  Button,
-  Label,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+// import {
+//   Button,
+//   Label,
+//   FormGroup,
+//   Input,
+//   InputGroupAddon,
+//   InputGroupText,
+//   InputGroup,
+//   Container,
+//   Row,
+//   Col,
+// } from "reactstrap";
 
 function Index() {
   React.useEffect(() => {
@@ -40,7 +40,6 @@ function Index() {
     };
   });
 
-  const [showBot, setShowBot] = useState(false);
 
   return (
     <>

@@ -1,7 +1,6 @@
 import React from "react";
 // reactstrap components
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Row, Col } from "reactstrap";
 import Card from '../../components/Card/Card';
 // core components
 
