@@ -48,6 +48,10 @@ class ActionProvider {
         const dont = this.createChatBotMessage("Sorry I don't know the answer to this one.")
         this.updateChatbotState(dont)
     }
+    enterMobileNumber(){
+        const number=this.createChatBotMessage("Please provide your contact number")
+        this.updateChatbotState(number);
+    }
     enterEmail() {
         const emails = this.createChatBotMessage("Please provide your email")
         this.updateChatbotState(emails)

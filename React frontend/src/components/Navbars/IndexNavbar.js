@@ -130,9 +130,9 @@ function IndexNavbar() {
               <NavItem>
                 <NavLink style={{ backgroundColor: '#2ca8ff', color: 'white', marginTop: '8px', marginRight: '10px' }} href="#aboutus">About Us</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink style={{ backgroundColor: '#2ca8ff', color: 'white', marginTop: '8px', padding: '-10px' }} href="#aboutus">Ask a Query</NavLink>
-              </NavItem>
+              {/* <NavItem>
+                <NavLink style={{ backgroundColor: '#2ca8ff', color: 'white', marginTop: '8px', padding: '-10px' }} >Ask a Query</NavLink>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>

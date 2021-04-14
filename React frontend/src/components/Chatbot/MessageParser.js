@@ -1,5 +1,6 @@
 import axios from "axios";
 
+var isValid=true;
 let queries = {}
 class MessageParser {
     constructor(actionProvider) {
@@ -31,13 +32,21 @@ class MessageParser {
         else if (lowerCaseMessage.includes("live")) {
             this.actionProvider.live()
         }
-        else if (!(lowerCaseMessage.includes("@"))) {
+        else if (!(lowerCaseMessage.includes("@")) && isValid) {
             queries.query = lowerCaseMessage;
             this.actionProvider.enterEmail()
         }
-        else if (lowerCaseMessage.includes("@")) {
+        else if (new RegExp(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}/g).test(lowerCaseMessage) && isValid ) {
             queries.email = lowerCaseMessage;
+            isValid=false;
+            this.actionProvider.enterMobileNumber();
+        }
+        else if (lowerCaseMessage.length<=20 && Number.isInteger(parseInt(lowerCaseMessage))) {
+            console.log( Number.isInteger(parseInt(lowerCaseMessage)) );
+            
+            queries.mobile = lowerCaseMessage;
             this.actionProvider.response()
+
             axios.post('http://localhost:8080/admin/sendQuery', {
                 issue: queries,
             })
@@ -47,6 +56,9 @@ class MessageParser {
                 .catch(function (error) {
                     console.log(error);
                 });
+        }
+        else {
+            isValid=true;
         }
     }
 }
