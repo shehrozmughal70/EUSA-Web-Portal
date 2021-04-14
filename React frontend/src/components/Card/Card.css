@@ -24,3 +24,12 @@
   width: 150px;
   object-fit: contain;
 }
+
+@media screen and (max-width: 600px) {
+  .card > p {
+    line-break: 14px;
+  }
+  .card {
+    margin: 20px 15px;
+  }
+}

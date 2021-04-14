@@ -14,6 +14,9 @@ const useStyles = makeStyles({
     marginTop: '220px',
     marginLeft: '-100px',
     width: '70%',
+  },
+  heading: {
+    marginLeft: '50px',
   }
 });
 
@@ -48,7 +51,7 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className={classes.content}>
-            <h1>Quick. Reliable. Affordable.</h1>
+            <h1 className={classes.heading}>Quick. Reliable. Affordable.</h1>
             <h3>EUSA aims to add value to customers' lives by providing a smart solution to all their problems. We are providing the largest range of home maintenance services all over Karachi and Lahore.</h3>
           </div>
 

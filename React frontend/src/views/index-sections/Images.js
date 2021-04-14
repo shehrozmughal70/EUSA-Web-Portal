@@ -10,17 +10,24 @@ const useStyles = makeStyles({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    '@media (max-width: 600px)': {
+      flexWrap: 'wrap',
+    },
   },
   heading: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: '50px',
-    borderBottom: '5px solid #2ca8ff',
-
+    flexDirection: 'column'
+    // borderBottom: '5px solid #2ca8ff',
   }
   , h: {
     fontWeight: 'bold'
+  },
+  line: {
+    border: '5px solid #2ca8ff',
+    width: '30vw'
   },
   banner: {
     display: 'flex',
@@ -32,7 +39,8 @@ const useStyles = makeStyles({
     marginRight: 'auto',
     marginTop: '20px',
     fontSize: '14px',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    wordWrap: 'break-word',
   }
 });
 
@@ -44,6 +52,7 @@ function Images() {
       <div className={classes.banner}>
         <div className={classes.heading}>
           <h1 className={classes.h}>Our Services</h1>
+          <hr className={classes.line} />
         </div>
         <div className={classes.paragraph}>
           <h4>Looking for reliable Construction, Renovation, and Maintenance & Repair Services? Our prices start as low as Rs. 1000* only!</h4>
