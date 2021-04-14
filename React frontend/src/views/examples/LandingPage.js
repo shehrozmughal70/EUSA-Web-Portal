@@ -63,7 +63,7 @@ function LandingPage() {
                     className="image-container"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/about3.jpg") + ")",
+                        "url(" + require("assets/img/about6.jpg") + ")",
                     }}
                   ></div>
                 </Col>
@@ -72,7 +72,7 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/about4.jpg") + ")",
+                        "url(" + require("assets/img/about5.jpg") + ")",
                     }}
                   ></div>
                   <h2 style={{ fontWeight: 'bold' }}>
