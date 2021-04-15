@@ -72,7 +72,7 @@ function IndexHeader() {
         <Container>
           <div className={classes.content}>
             <h1 className={classes.heading}>Quick. Reliable. Affordable.</h1>
-            <h3 className={classes.headingthree}>EUSA aims to add value to customers' lives by providing a smart solution to all their problems. We are providing the largest range of home maintenance services all over Karachi and Lahore.</h3>
+            <h3 className={classes.headingthree}>EUSA aims to add value to customers' lives by providing a smart solution to all their problems. We are providing the largest range of home maintenance services all over Islamabad and Rawalpindi.</h3>
           </div>
 
         </Container>

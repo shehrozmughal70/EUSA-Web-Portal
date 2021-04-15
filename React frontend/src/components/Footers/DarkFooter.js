@@ -12,16 +12,16 @@ function DarkFooter() {
           <ul>
             <li>
               <a
-                href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
+                // href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
+                // target="_blank"
               >
                 About Us
               </a>
             </li>
             <li>
               <a
-                href="http://blog.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
+                // href="http://blog.creative-tim.com?ref=nukr-dark-footer"
+                // target="_blank"
               >
                 Blog
               </a>

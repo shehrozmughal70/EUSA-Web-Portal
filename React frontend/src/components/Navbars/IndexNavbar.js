@@ -88,7 +88,7 @@ function IndexNavbar() {
             <div className={classes.nav__left}>
               <img className={classes.image} src={require("../../assets/img/logo1.jpg")} alt="" />
               <NavbarBrand
-                href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
+               // href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
                 target="_blank"
                 id="navbar-brand"
                 style={{ fontWeight: 'bold', fontSize: '20px', color: '#2ca8ff' }}

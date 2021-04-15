@@ -73,7 +73,7 @@ function LandingPage() {
                   <h2 style={{ fontWeight: 'bold' }}>
                     Why Choose EUSA
                   </h2>
-                  <h4>● Trained</h4>
+                  <h4>● Trained Workers</h4>
                   <p>
                     Our workers are skilled, trained and professional. Furthermore, they are background-checked.
                   </p>
@@ -144,7 +144,7 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/ryan.jpg")}
+                      src={require("assets/img/default.jpg")}
                     ></img>
                     <h4 className="title">Salman Qureshi</h4>
                     <p className="category text-info">Backend Developer</p>
@@ -178,7 +178,7 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/eva.jpg")}
+                      src={require("assets/img/default.jpg")}
                     ></img>
                     <h4 className="title">Akash Ali</h4>
                     <p className="category text-info">Frontend Developer</p>
